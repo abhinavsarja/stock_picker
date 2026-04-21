@@ -14,7 +14,7 @@ short-/long-term context across sessions.
 
 ## Table of contents
 
-- [Elevator pitch](#elevator-pitch)
+- [Summary](#summary)
 - [Architecture](#architecture)
 - [How the crew works](#how-the-crew-works)
 - [Tech stack](#tech-stack)
