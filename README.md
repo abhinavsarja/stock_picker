@@ -33,9 +33,9 @@ short-/long-term context across sessions.
 
 ---
 
-## Elevator pitch
+## Summary
 
-Three things make this project interesting to your peers:
+Three things make this project interesting:
 
 1. **Agentic workflow, not a monolithic prompt.** A hierarchical CrewAI crew with a manager that
    delegates work to specialized worker agents (news finder, researcher, picker). Each has its
