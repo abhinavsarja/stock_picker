@@ -1,0 +1,62 @@
+default_agent: abhinav_stock_picker
+agents:
+  abhinav_stock_picker:
+    name: abhinav_stock_picker
+    language: python
+    node_version: '20'
+    entrypoint: /Users/abhinavsarja/2026/ed/projects/stock_picker/stock_picker_1/src/stock_picker_1/agent_entrypoint.py
+    deployment_type: container
+    runtime_type: null
+    platform: linux/arm64
+    container_runtime: null
+    source_path: /Users/abhinavsarja/2026/ed/projects/stock_picker/stock_picker_1
+    aws:
+      execution_role: arn:aws:iam::478832630290:role/AmazonBedrockAgentCoreSDKRuntime-ap-southeast-1-01bf0eaf6d
+      execution_role_auto_create: false
+      account: '478832630290'
+      region: ap-southeast-1
+      ecr_repository: 478832630290.dkr.ecr.ap-southeast-1.amazonaws.com/bedrock-agentcore-abhinav_stock_picker
+      ecr_auto_create: false
+      s3_path: null
+      s3_auto_create: true
+      network_configuration:
+        network_mode: PUBLIC
+        network_mode_config: null
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+      lifecycle_configuration:
+        idle_runtime_session_timeout: null
+        max_lifetime: null
+    bedrock_agentcore:
+      agent_id: abhinav_stock_picker-sWpnJL9gXg
+      agent_arn: arn:aws:bedrock-agentcore:ap-southeast-1:478832630290:runtime/abhinav_stock_picker-sWpnJL9gXg
+      agent_session_id: 112e737b-8f1f-4ee8-b845-10ec787fc93c
+    codebuild:
+      project_name: bedrock-agentcore-abhinav_stock_picker-builder
+      execution_role: arn:aws:iam::478832630290:role/AmazonBedrockAgentCoreSDKCodeBuild-ap-southeast-1-01bf0eaf6d
+      source_bucket: bedrock-agentcore-codebuild-sources-478832630290-ap-southeast-1
+    memory:
+      mode: STM_AND_LTM
+      memory_id: abhinav_stock_picker_mem-fM44pBFXxL
+      memory_arn: arn:aws:bedrock-agentcore:ap-southeast-1:478832630290:memory/abhinav_stock_picker_mem-fM44pBFXxL
+      memory_name: abhinav_stock_picker_mem
+      event_expiry_days: 30
+      first_invoke_memory_check_done: true
+      was_created_by_toolkit: true
+    identity:
+      credential_providers: []
+      workload: null
+    aws_jwt:
+      enabled: false
+      audiences: []
+      signing_algorithm: ES384
+      issuer_url: null
+      duration_seconds: 300
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
+    api_key_env_var_name: null
+    api_key_credential_provider_name: null
+    is_generated_by_agentcore_create: false

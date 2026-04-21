@@ -1,0 +1,21 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+.DS_Store
+.venv/
+output/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Local CrewAI / LanceDB dev artifacts (not for version control)
+memory/
+
+# AgentCore CodeBuild cache artifacts (regenerated on deploy)
+.bedrock_agentcore/**/dependencies.zip
+.bedrock_agentcore/**/dependencies.hash

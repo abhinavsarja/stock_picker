@@ -1,0 +1,24 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "SecretsRead",
+        "Effect": "Allow",
+        "Action": "secretsmanager:GetSecretValue",
+        "Resource": "arn:aws:secretsmanager:ap-southeast-1:478832630290:secret:stock-picker-1/secrets-*"
+      },
+      {
+        "Sid": "AgentCoreMemoryDataPlane",
+        "Effect": "Allow",
+        "Action": [
+          "bedrock-agentcore:CreateEvent",
+          "bedrock-agentcore:ListEvents",
+          "bedrock-agentcore:GetEvent",
+          "bedrock-agentcore:RetrieveMemoryRecords",
+          "bedrock-agentcore:ListMemoryRecords",
+          "bedrock-agentcore:GetMemoryRecord"
+        ],
+        "Resource": "arn:aws:bedrock-agentcore:ap-southeast-1:478832630290:memory/*"
+      }
+    ]
+  }
